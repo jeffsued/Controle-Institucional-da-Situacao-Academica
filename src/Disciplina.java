@@ -20,7 +20,6 @@ public class Disciplina {
 
     }
 
-
     public String toString() {
         return  "nomeDisciplina='" + nomeDisciplina + '\'' +
                 ", horasDeEstudo=" + horasDeEstudo +
