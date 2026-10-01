@@ -3,21 +3,22 @@ package lab2;
 public class Disciplina {
     private String nomeDisciplina;
     private int horasDeEstudo;
-    private int[] Notas;
+    private double[] Notas = new double[4];
 
     public Disciplina(nomeDisciplina String){
         this.nomeDisciplina = nomeDisciplina;
     }
 
     public void cadastraHoras(int horas) {
+        this.horasDeEstudo += horas;
     }
 
     public void cadastraNota(int nota, double valorNota) {
-        for ()
+        Notas[nota-1] = valorNota;
     }
 
     public boolean aprovado() {
-
+        media >= 7.0
     }
 
     public String toString() {
