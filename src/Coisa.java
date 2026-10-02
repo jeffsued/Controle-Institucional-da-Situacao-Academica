@@ -6,8 +6,8 @@ public class Coisa {
         System.out.println("-----");
         registrarTempoOnline();
         System.out.println("-----");
-//        controlarDisciplina();
-//        System.out.println("-----");
+        controlarDisciplina();
+        System.out.println("-----");
 //        registrarResumos();
     }
     public static void registrarDescanso() {
@@ -61,8 +61,6 @@ public class Coisa {
 //        for (int i = 0; i < meusResumos.conta(); i++) {
 //            System.out.println(resumos[i]);
 //        }
-//
-//
 //        System.out.println();
 //        System.out.println("Resumos: ");
 //        System.out.println(meusResumos.imprimeResumos());

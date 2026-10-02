@@ -1,11 +1,13 @@
 package lab2;
 
+import java.util.Arrays;
+
 public class Disciplina {
     private String nomeDisciplina;
     private int horasDeEstudo;
     private double[] Notas = new double[4];
 
-    public Disciplina(nomeDisciplina String){
+    public Disciplina(String nomeDisciplina){
         this.nomeDisciplina = nomeDisciplina;
     }
 
@@ -18,13 +20,21 @@ public class Disciplina {
     }
 
     public boolean aprovado() {
-        media >= 7.0
+        double soma = 0;
+        for(int i = 0; i < Notas.length; i++){
+            soma += Notas[i];
+        }
+        double media = soma/Notas.length;
+        return media >= 7.0;
     }
 
+    @Override
     public String toString() {
-        return  "nomeDisciplina='" + nomeDisciplina + '\'' +
-                ", horasDeEstudo=" + horasDeEstudo +
-                ", Notas=" + java.util.Arrays.toString(Notas) +
-                '';
+        double soma = 0;
+        for(int i = 0; i < Notas.length; i++){
+            soma += Notas[i];
+        }
+        double media = soma/Notas.length;
+        return nomeDisciplina +" " + horasDeEstudo +" "+ media+" " + Arrays.toString(Notas);
     }
 }
