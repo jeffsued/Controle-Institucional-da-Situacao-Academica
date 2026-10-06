@@ -20,6 +20,7 @@ public class Disciplina {
     }
 
     public boolean aprovado() {
+        //Como o bloco de código a seguir se repete, ele poderia estar como um metodo auxiliar
         double soma = 0;
         for(int i = 0; i < Notas.length; i++){
             soma += Notas[i];
