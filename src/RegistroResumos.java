@@ -48,4 +48,10 @@ public class RegistroResumos {
         }
         return false;
     }
+
+    public String[] busca (String chaveDeBusca){
+        return null;
+    }
+
+    // procurar uma palavra no conteudo do resumo com o indexOF
 }
