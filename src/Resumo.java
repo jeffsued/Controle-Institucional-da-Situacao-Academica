@@ -15,16 +15,10 @@ public class Resumo {
         this.conteudo = conteudo;
     }
 
-/**
- * Devolve o tema do resumo.
- */
     public String getTema() {
         return tema;
     }
 
-/**
- * Devolve o conteudo do resumo
- */
     public String getConteudo() {
         return conteudo;
     }

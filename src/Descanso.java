@@ -25,7 +25,7 @@ public class Descanso {
 /**
  * Informa o status geral de descanso. O aluno está descansado quando a média de horas de descanso por semana é de pelo menos 26.
  * Se o número de semanas ainda não foi colocado, o status é "Cansado".
- * retorna "Descansado" se a média semanal for maior ou igual a 26, ou "Cansado" caso não seja.
+ * @return "Descansado" se a média semanal for maior ou igual a 26, ou "Cansado" caso não seja.
  */
     public String getStatusGeral() {
         if (horasDescanso != 0 && semanas != 0 && (horasDescanso/semanas) >= 26){

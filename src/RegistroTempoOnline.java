@@ -41,9 +41,9 @@ public class RegistroTempoOnline {
         return tempoInvestidoOnline >= tempoOnlineEsperado;
     }
 
-    /**
-     * Representa o registro: "disciplina investido/esperado".
-     */
+/**
+ * Representa o registro: "disciplina investido/esperado".
+ */
     @Override
     public String toString() {
         return nomeDisciplina+" "+ tempoInvestidoOnline +"/"+ tempoOnlineEsperado;

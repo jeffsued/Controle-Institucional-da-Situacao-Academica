@@ -33,7 +33,7 @@ import java.util.Arrays;
 
 /**
  * Devolve os temas de todos os resumos cadastrados, na ordem de cadastro.
- * retorna um array com os temas cadastrados
+ * @return um array com os temas cadastrados
  */
     public String[] pegaResumos() {
         String[] tema = new String[cont];
@@ -44,8 +44,8 @@ import java.util.Arrays;
     }
 
 /**
- * Monta uma representação textual do registro, com a quantidade de
- * retorna texto com a quantidade de resumos e a lista de temas
+ * Monta uma representação textual do registro, com a quantidade de resumos
+ * @return texto com a quantidade de resumos e a lista de temas
  */
     public String imprimeResumos() {
         String temas = "";
@@ -71,7 +71,7 @@ import java.util.Arrays;
 /**
  * Verifica se existe um resumo cadastrado com o tema informado.
  * o parametro "tema" é o que vai ser procurado.
- * retorna true se existir um resumo com esse tema, ou false caso contrário.
+ * @return true se existir um resumo com esse tema, ou false caso contrário.
  */
     public boolean temResumo(String tema) {
         for(int i = 0; i< cont; i++){

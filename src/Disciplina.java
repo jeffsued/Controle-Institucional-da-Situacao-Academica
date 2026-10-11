@@ -32,8 +32,8 @@ public class Disciplina {
     }
 
 /**
- * Cria uma disciplina com a quantidade de notas e os pesos informados
- * (média ponderada). Exemplo: com pesos [6, 4] a média é (6 * notas[0] + 4 * notas[1]) / 10.
+ * Cria uma disciplina com a quantidade de notas e os pesos informados que é a média ponderada
+ * Exemplo: com pesos [6, 4] a média é (6 * notas[0] + 4 * notas[1]) / 10.
  */
     public Disciplina(String nomeDisciplina, int numNotas, int[] pesos){
         if(pesos.length != numNotas){ //caso a quantidade de notas seja diferente da quantidade de pesos.
@@ -62,7 +62,7 @@ public class Disciplina {
 
 /**
  * Informa se o aluno foi aprovado na disciplina.
- * retorna true se a média for maior ou igual a 7.0, false caso contrário
+ * @return true se a média for maior ou igual a 7.0, false caso contrário
  */
     public boolean aprovado() {
         return calculaMedia() >= 7.0;
@@ -71,7 +71,7 @@ public class Disciplina {
 /**
  * Calcula a média da disciplina usando os pesos de cada nota. Notas
  * ainda não cadastradas valem 0.0. Se nenhum peso foi informado, todos valem 1 e a média é aritmética.
- * retorna a média ponderada das notas
+ * @return a média ponderada das notas
  */
     public double calculaMedia() {
         double somaNotas = 0;
