@@ -12,8 +12,7 @@ public class RegistroTempoOnline {
 
 /**
  * Cria um registro com a meta de tempo online informada.
- * @param nomeDisciplina nome da disciplina
- * @param tempoOnlineEsperado meta de horas online
+ * "tempoOnlineEsperado" é a meta de horas online
  */
     public RegistroTempoOnline(String nomeDisciplina, int tempoOnlineEsperado) {
         this.nomeDisciplina = nomeDisciplina;
@@ -22,7 +21,6 @@ public class RegistroTempoOnline {
 
 /**
  * Cria um registro com a meta padrão de 120 horas online.
- * @param nomeDisciplina nome da disciplina
  */
     public RegistroTempoOnline(String nomeDisciplina) {
         this(nomeDisciplina,120);

@@ -22,9 +22,7 @@ public class Disciplina {
     }
 
 /**
- * Cria uma disciplina com a quantidade de notas informada, todas com
- * o mesmo peso (média aritmética).
- * @param numNotas quantidade de notas da disciplina
+ * Cria uma disciplina com a quantidade de notas informada, todas com o mesmo peso (média aritmética).
  */
     public Disciplina(String nomeDisciplina, int numNotas){
         this.nomeDisciplina = nomeDisciplina;
@@ -38,11 +36,9 @@ public class Disciplina {
  * Cria uma disciplina com a quantidade de notas e os pesos informados
  * (média ponderada). Por exemplo, com pesos [6, 4] a média é
  * (6 * notas[0] + 4 * notas[1]) / 10.
- * @param pesos peso de cada nota, na mesma ordem das notas
- * @throws IllegalArgumentException se a quantidade de pesos for diferente de numNotas
  */
     public Disciplina(String nomeDisciplina, int numNotas, int[] pesos){
-        if(pesos.length != numNotas){
+        if(pesos.length != numNotas){ //caso a quantidade de notas seja diferente da quantidade de pesos.
             throw new IllegalArgumentException("Quantidade de pesos diferente da quantidade notas");
         }
         this.nomeDisciplina = nomeDisciplina;
@@ -53,7 +49,6 @@ public class Disciplina {
 
 /**
  * Soma horas de estudo ao total já cadastrado.
- * @param horas quantidade de horas a adicionar
  */
     public void cadastraHoras(int horas) {
         this.horasDeEstudo += horas;
@@ -62,9 +57,6 @@ public class Disciplina {
 /**
  * Cadastra o valor de uma nota. Se a nota já tiver sido cadastrada,
  * o valor anterior é sobrescrito.
- * @param nota número da nota, começando em 1
- * @param valorNota valor da nota
- * @throws IllegalArgumentException se o número da nota for menor que 1 ou maior que a quantidade de notas da disciplina
  */
     public void cadastraNota(int nota, double valorNota) {
         notas[nota-1] = valorNota;
@@ -72,7 +64,7 @@ public class Disciplina {
 
 /**
  * Informa se o aluno foi aprovado na disciplina.
- * @return true se a média for maior ou igual a 7.0, false caso contrário
+ * retorna true se a média for maior ou igual a 7.0, false caso contrário
  */
     public boolean aprovado() {
         return calculaMedia() >= 7.0;
@@ -81,7 +73,7 @@ public class Disciplina {
 /**
  * Calcula a média da disciplina usando os pesos de cada nota. Notas
  * ainda não cadastradas valem 0.0. Se nenhum peso foi informado, todos valem 1 e a média é aritmética.
- * @return a média ponderada das notas
+ * retorna a média ponderada das notas
  */
     public double calculaMedia() {
         double somaNotas = 0;

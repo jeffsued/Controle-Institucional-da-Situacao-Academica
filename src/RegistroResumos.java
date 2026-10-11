@@ -13,7 +13,7 @@ import java.util.Arrays;
 
 /**
  * Cria um registro com capacidade para a quantidade de resumos informada.
- * @param numeroDeResumos quantidade máxima de resumos do registro
+ * "numeroDeResumos" é quantidade máxima de resumos do registro
  */
     public RegistroResumos(int numeroDeResumos) {
         this.resumo = new Resumo[numeroDeResumos];
@@ -21,12 +21,10 @@ import java.util.Arrays;
 
 /**
  * Adiciona um novo resumo ao registro.
- * @param tema tema do resumo
- * @param conteudo conteúdo do resumo
- * @throws IllegalStateException se o registro já estiver cheio
  */
     public void adiciona(String tema, String conteudo) {
         if (cont >= resumo.length) {
+            //se o registro já estiver cheio
             throw new IllegalStateException("Registro cheio");
         }
         resumo[cont] = new Resumo(tema, conteudo);
@@ -35,7 +33,7 @@ import java.util.Arrays;
 
 /**
  * Devolve os temas de todos os resumos cadastrados, na ordem de cadastro.
- * @return um array com os temas cadastrados
+ * retorna um array com os temas cadastrados
  */
     public String[] pegaResumos() {
         String[] tema = new String[cont];
@@ -45,10 +43,10 @@ import java.util.Arrays;
         return tema;
     }
 
-    /**
-     * Monta uma representação textual do registro, com a quantidade de
-     * @return texto com a quantidade de resumos e a lista de temas
-     */
+/**
+ * Monta uma representação textual do registro, com a quantidade de
+ * retorna texto com a quantidade de resumos e a lista de temas
+ */
     public String imprimeResumos() {
         String temas = "";
         for(int i= 0; i< cont; i++){
@@ -72,8 +70,8 @@ import java.util.Arrays;
 
 /**
  * Verifica se existe um resumo cadastrado com o tema informado.
- * @param tema tema a ser procurado
- * @return true se existir um resumo com esse tema, false caso contrário
+ * o parametro "tema" é o que vai ser procurado.
+ * retorna true se existir um resumo com esse tema, ou false caso contrário.
  */
     public boolean temResumo(String tema) {
         for(int i = 0; i< cont; i++){
@@ -85,10 +83,8 @@ import java.util.Arrays;
     }
 
 /**
- * Busca os resumos cujo conteúdo contém a chave de busca, ignorando
- * maiúsculas e minúsculas, por causa do "toLowerCase()"
- * @param chaveDeBusca palavra a ser procurada no conteúdo dos resumos
- * @return os temas dos resumos encontrados, em ordem alfabética
+ * Busca os resumos cujo conteúdo contém a chave de busca, ignorando maiúsculas e minúsculas, por causa do "toLowerCase()".
+ * "chaveDeBusca" é a palavra a ser procurada no conteúdo dos resumos e retorna os temas dos resumos encontrados, em ordem alfabética.
  */
     public String[] busca(String chaveDeBusca) {
         String chave = chaveDeBusca.toLowerCase();
