@@ -22,7 +22,7 @@ public class Disciplina {
     }
 
 /**
- * Cria uma disciplina com a quantidade de notas informada, todas com o mesmo peso (média aritmética).
+ * Cria uma disciplina com a quantidade de notas informada, todas com o mesmo peso.
  */
     public Disciplina(String nomeDisciplina, int numNotas){
         this.nomeDisciplina = nomeDisciplina;
@@ -34,8 +34,7 @@ public class Disciplina {
 
 /**
  * Cria uma disciplina com a quantidade de notas e os pesos informados
- * (média ponderada). Por exemplo, com pesos [6, 4] a média é
- * (6 * notas[0] + 4 * notas[1]) / 10.
+ * (média ponderada). Exemplo: com pesos [6, 4] a média é (6 * notas[0] + 4 * notas[1]) / 10.
  */
     public Disciplina(String nomeDisciplina, int numNotas, int[] pesos){
         if(pesos.length != numNotas){ //caso a quantidade de notas seja diferente da quantidade de pesos.
