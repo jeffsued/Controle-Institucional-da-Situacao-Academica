@@ -9,14 +9,14 @@ public class Descanso {
     private int semanas;
 
 /**
- * Define o total de horas de descanso no período.
+ * O total de horas de descanso.
  */
     public void defineHorasDescanso(int valor) {
         this.horasDescanso = valor;
     }
 
 /**
- * Define o número de semanas do período.
+ * Número de semanas.
  */
     public void defineNumeroSemanas(int valor) {
         this.semanas = valor;
@@ -24,7 +24,7 @@ public class Descanso {
 
 /**
  * Informa o status geral de descanso. O aluno está descansado quando a média de horas de descanso por semana é de pelo menos 26.
- * Se o número de semanas ainda não foi definido, o status é "Cansado".
+ * Se o número de semanas ainda não foi colocado, o status é "Cansado".
  * retorna "Descansado" se a média semanal for maior ou igual a 26, ou "Cansado" caso não seja.
  */
     public String getStatusGeral() {

@@ -2,9 +2,8 @@ package lab2;
 import java.util.Arrays;
 
 /**
- * Representa uma disciplina do sistema CoISA, com notas, pesos e horas
- * de estudo. A média é aritmética quando não há pesos e ponderada quando
- * os pesos são informados.
+ * Representa uma disciplina do sistema CoISA, com notas, pesos e hora de estudo.
+ * A média é aritmética quando não há pesos e ponderada quando os pesos são informados.
  * @author Jefferson Sued
  */
 public class Disciplina {

@@ -28,7 +28,6 @@ public class RegistroTempoOnline {
 
 /**
  * Soma horas ao tempo online já investido.
- * @param horas quantidade de horas a adicionar
  */
     public void adicionaTempoOnline(int horas) {
          tempoInvestidoOnline += horas;

@@ -13,7 +13,7 @@ import java.util.Arrays;
 
 /**
  * Cria um registro com capacidade para a quantidade de resumos informada.
- * "numeroDeResumos" é quantidade máxima de resumos do registro
+ * "numeroDeResumos" é a quantidade máxima de resumos do registro
  */
     public RegistroResumos(int numeroDeResumos) {
         this.resumo = new Resumo[numeroDeResumos];
